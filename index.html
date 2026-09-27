@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Login System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🔐 Secure Login System</h1>
+    <p class="subtitle">
+        Secure user registration and login demonstration
+    </p>
+
+    <div class="tabs">
+        <button onclick="showRegister()">Register</button>
+        <button onclick="showLogin()">Login</button>
+    </div>
+
+    <!-- Registration -->
+    <div id="registerBox" class="form-box">
+
+        <h2>Create Account</h2>
+
+        <input
+            type="text"
+            id="regUsername"
+            placeholder="Enter username"
+        >
+
+        <input
+            type="password"
+            id="regPassword"
+            placeholder="Enter password"
+        >
+
+        <button onclick="registerUser()">
+            Register
+        </button>
+
+        <p id="registerMessage"></p>
+
+    </div>
+
+    <!-- Login -->
+    <div id="loginBox" class="form-box hidden">
+
+        <h2>Login</h2>
+
+        <input
+            type="text"
+            id="loginUsername"
+            placeholder="Enter username"
+        >
+
+        <input
+            type="password"
+            id="loginPassword"
+            placeholder="Enter password"
+        >
+
+        <button onclick="loginUser()">
+            Login
+        </button>
+
+        <p id="loginMessage"></p>
+
+    </div>
+
+    <!-- Dashboard -->
+    <div id="dashboard" class="dashboard hidden">
+
+        <h2>✅ Login Successful</h2>
+
+        <p id="welcomeMessage"></p>
+
+        <div class="security-info">
+            <p>🔒 Input validation enabled</p>
+            <p>🔑 Password protection enabled</p>
+            <p>🛡️ Session management enabled</p>
+        </div>
+
+        <button onclick="logoutUser()">
+            Logout
+        </button>
+
+    </div>
+
+    <div class="info">
+
+        <h3>Security Features</h3>
+
+        <ul>
+            <li>User registration and login</li>
+            <li>Password validation</li>
+            <li>Input validation</li>
+            <li>Session management</li>
+            <li>Logout functionality</li>
+            <li>Basic protection against unsafe input</li>
+        </ul>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
